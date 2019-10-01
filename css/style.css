@@ -1859,7 +1859,7 @@ section[data-section="menu"] {
 }
 
 .probootstrap-heading .primary-heading {
-  font-family: "Open Sans", serif;
+	font-family: "Open Sans", Arial, sans-serif;
   color: #FFA33E;
   margin: 0;
   padding: 0;

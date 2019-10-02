@@ -315,7 +315,7 @@ a:hover, a:focus, a:active {
 
 @media screen and (max-width: 480px) {
   .probootstrap-navbar .navbar-brand {
-    top: 6px !important;
+    top: 10px !important;
   }
 }
 

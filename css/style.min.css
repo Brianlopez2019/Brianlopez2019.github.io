@@ -3,26 +3,26 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Open Sans",Arial,sans-serif}@font-face{font-
 and (min-width : 320px)  
 and (max-width : 480px) {  
 /* Styles */  
-.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo.jpg) center center;background-size: cover;}
+.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo1.jpg) center center;background-size: cover;}
 }  
 /* Smartphones (landscape) ----------- */  
 @media only screen  
 and (min-width : 321px) {  
 /* Styles */  
-.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo.jpg) center center;background-size: cover;}
+.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo1.jpg) center center;background-size: cover;}
 }  
 /* Smartphones (portrait) ----------- */  
 @media only screen  
 and (max-width : 320px) {  
 /* Styles */ 
-.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo.jpg) center center;background-size: cover;} 
+.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo1.jpg) center center;background-size: cover;} 
 }  
 /* iPads (portrait and landscape) ----------- */  
 @media only screen  
 and (min-width : 768px)  
 and (max-width : 1024px) {  
 /* Styles */  
-.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo.jpg) center center;background-size: cover;}
+.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo1.jpg) center center;background-size: cover;}
 }  
 /* iPads (landscape) ----------- */  
 @media only screen  
@@ -30,7 +30,7 @@ and (min-width : 768px)
 and (max-width : 1024px)  
 and (orientation : landscape) {  
 /* Styles */  
-.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo.jpg) center center;background-size: cover;}
+.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo1.jpg) center center;background-size: cover;}
 }  
 /* iPads (portrait) ----------- */  
 @media only screen  
@@ -38,24 +38,24 @@ and (min-width : 768px)
 and (max-width : 1024px)  
 and (orientation : portrait) {  
 /* Styles */ 
-.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo.jpg) center center;background-size: cover;}
+.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo1.jpg) center center;background-size: cover;}
 }  
 /* Desktops and laptops ----------- */  
 @media only screen  
 and (min-width : 1224px) {  
 /* Styles */  
-.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo.jpg) center center;background-size: cover;}
+.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo1.jpg) center center;background-size: cover;}
 }  
 /* Large screens ----------- */  
 @media only screen  
 and (min-width : 1824px) {  
 /* Styles */  
-.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo.jpg) center center;background-size: cover;}
+.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo1.jpg) center center;background-size: cover;}
 }  
 /* iPhone 4 ----------- */  
 @media  
 only screen and (-webkit-min-device-pixel-ratio : 1.5),  
 only screen and (min-device-pixel-ratio : 1.5) {  
-.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo.jpg) center center;background-size: cover;}
+.fondo{position: relative;height: 100vh;width: 100%;background: url(../img/fondo1.jpg) center center;background-size: cover;}
 /* Styles */  
 } 

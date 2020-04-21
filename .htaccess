@@ -50,3 +50,10 @@ Header append Vary User-Agent env=!dont-vary
 
 # deccarga de acrhivos nuevos
 FileEtag MTime Size
+# ocultar .html
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html-f
+RewriteRule ^(.*)$ $1.html
+</IfModule>

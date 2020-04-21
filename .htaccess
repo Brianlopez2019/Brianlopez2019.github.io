@@ -48,3 +48,5 @@ Header append Vary User-Agent env=!dont-vary
   </FilesMatch>
 </IfModule>
 
+# deccarga de acrhivos nuevos
+FileEtag MTime Size

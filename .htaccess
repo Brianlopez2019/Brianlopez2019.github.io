@@ -11,14 +11,19 @@ AddOutputFilterByType DEFLATE text/x-js
 AddOutputFilterByType DEFLATE text/css
 AddOutputFilterByType DEFLATE image/x-icon
 # Caching einrichten
-
-FileETag MTime Size
-
-
+<IfModule mod_expires.c>
 ExpiresActive On
-ExpiresByType text/css "access plus 1 weeks"
-ExpiresByType application/javascript "access plus 1 weeks"
-ExpiresByType application/x-javascript "access plus 1 weeks"
-ExpiresByType image/webp "access plus 1 months"
-ExpiresByType image/x-icon "access plus 1 months"
+ExpiresDefault "access plus 10 days"
+ExpiresByType text/css "access plus 1 week"
+ExpiresByType text/plain "access plus 1 week"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/webp "access plus 1 month"
+ExpiresByType image/x-icon "access plus 3 months"
+ExpiresByType application/x-javascript "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 week"
+ExpiresByType text/javascript "access plus 1 week"
+ExpiresByType application/x-icon "access plus 3 months"
+</IfModule>
 

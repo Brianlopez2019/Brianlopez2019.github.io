@@ -10,3 +10,15 @@ AddOutputFilterByType DEFLATE text/javascript
 AddOutputFilterByType DEFLATE text/x-js
 AddOutputFilterByType DEFLATE text/css
 AddOutputFilterByType DEFLATE image/x-icon
+# Caching einrichten
+
+FileETag MTime Size
+
+
+ExpiresActive On
+ExpiresByType text/css "access plus 1 weeks"
+ExpiresByType application/javascript "access plus 1 weeks"
+ExpiresByType application/x-javascript "access plus 1 weeks"
+ExpiresByType image/webp "access plus 1 months"
+ExpiresByType image/x-icon "access plus 1 months"
+

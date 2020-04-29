@@ -58,7 +58,7 @@ RewriteCond %{REQUEST_FILENAME}.html-f
 RewriteRule ^(.*)$ $1.html
 </IfModule>
 RewriteEngine On
-RewriteCond %{HTTP_HOST} !^www.smartevolutionsbr.com$
+RewriteCond %{HTTP_HOST} !^smartevolutionsbr.com$
 RewriteRule ^(.*)$ https://www.smartevolutionsbr.com/$1 [R=301,L]
 # direccionamiento a https
 RewriteEngine On 

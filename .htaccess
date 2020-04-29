@@ -58,6 +58,6 @@ RewriteCond %{REQUEST_FILENAME}.html-f
 RewriteRule ^(.*)$ $1.html
 </IfModule>
 # direccionamiento a https
-RewriteEngine On
-RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE] 
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.smartevolutionsbr.com/$1 [R,L]

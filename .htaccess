@@ -62,22 +62,25 @@ RewriteRule ^(.*)$ $1.html
 #### Force HTTPS
 #### Force WWW
 #### Remove trailing / from file
-
 # Turn on Rewrite Engine
 RewriteEngine On
 
 # Remove trailing slash from non-filepath urls
 RewriteCond %{REQUEST_URI} /(.+)/$
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ https://www.smartevolutions.com/%1 [R=301,L]
+RewriteRule ^ https://www.smartevolutionsbr.com/%1 [R=301,L]
 
 # Include trailing slash on directory 
 RewriteCond %{REQUEST_URI} !(.+)/$
 RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^(.+)$ https://www.smartevolutions.com/$1/ [R=301,L]
+RewriteRule ^(.+)$ https://www.smartevolutionsbr.com/$1/ [R=301,L]
 
 # Force HTTPS and WWW 
 RewriteCond %{HTTP_HOST} !^www\.(.*)$ [OR,NC]
 RewriteCond %{https} off  
-RewriteRule ^(.*)$ https://www.smartevolutions.com/$1 [R=301,L]
+RewriteRule ^(.*)$ https://www.smartevolutionsbr.com/$1 [R=301,L]
 
+# Force HTTP and https
+RewriteEngine on 
+RewriteCond %{HTTP_HOST} !=on
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]

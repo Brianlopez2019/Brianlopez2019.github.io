@@ -77,3 +77,5 @@ RewriteRule ^(.*)$ https://www.smartevolutionsbr.com/$1 [R=301,L]
 RewriteEngine on 
 RewriteCond %{HTTP_HOST} !=on
 RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+# pagina 404
+ErrorDocument 404 /404.html
